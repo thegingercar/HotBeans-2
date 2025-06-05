@@ -317,11 +317,11 @@ const Home = () => {
       >
         <div className="text-center text-white z-10 max-w-4xl mx-auto px-6">
           <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
-            Welcome to Our
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-teal-400"> Professional</span> Platform
+            Welcome to Milton Keynes
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-teal-400"> Professional</span> Services
           </h1>
           <p className="text-xl md:text-2xl mb-8 text-gray-200">
-            Experience seamless communication and document management with our advanced chat support and file upload system.
+            Based in Milton Keynes, UK - Experience seamless communication and document management with our advanced chat support and CV upload system.
           </p>
           <div className="space-x-4">
             <button className="bg-gradient-to-r from-green-500 to-teal-600 text-white px-8 py-4 rounded-full text-lg font-semibold hover:from-green-600 hover:to-teal-700 transition-all duration-300 transform hover:scale-105 shadow-lg">
