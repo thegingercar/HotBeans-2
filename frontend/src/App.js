@@ -447,29 +447,38 @@ const Home = () => {
         <div className="max-w-6xl mx-auto px-6">
           <div className="grid md:grid-cols-3 gap-8">
             <div>
-              <h3 className="text-xl font-bold mb-4">Professional Platform</h3>
+              <h3 className="text-xl font-bold mb-4">Milton Keynes Professional Services</h3>
               <p className="text-gray-400">
-                Your trusted partner for professional communication and document management solutions.
+                Your trusted partner for professional communication and document management solutions in Milton Keynes and across the UK.
+              </p>
+              <p className="text-sm text-gray-500 mt-2">
+                📍 Based in Milton Keynes, Buckinghamshire, UK
               </p>
             </div>
             <div>
-              <h3 className="text-xl font-bold mb-4">Features</h3>
+              <h3 className="text-xl font-bold mb-4">Our Services</h3>
               <ul className="space-y-2 text-gray-400">
                 <li>Real-time Chat Support</li>
-                <li>Document Upload</li>
-                <li>Professional Design</li>
-                <li>Secure Platform</li>
+                <li>CV & Document Upload</li>
+                <li>Professional Consultation</li>
+                <li>UK-Based Support Team</li>
               </ul>
             </div>
             <div>
-              <h3 className="text-xl font-bold mb-4">Contact</h3>
-              <p className="text-gray-400">
+              <h3 className="text-xl font-bold mb-4">Contact Our Team</h3>
+              <ul className="space-y-2 text-gray-400">
+                <li>Abdina Jama - Senior Consultant</li>
+                <li>Abunina Haider - Project Manager</li>
+                <li>Zulkera Joe - Technical Lead</li>
+              </ul>
+              <p className="text-gray-400 mt-4">
                 Use our chat widget for instant support or upload your documents through our secure upload system.
               </p>
             </div>
           </div>
           <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
-            <p>&copy; 2024 Professional Platform. All rights reserved.</p>
+            <p>&copy; 2024 Milton Keynes Professional Services. All rights reserved.</p>
+            <p className="text-sm mt-2">Based in Milton Keynes, Buckinghamshire, United Kingdom</p>
           </div>
         </div>
       </footer>
