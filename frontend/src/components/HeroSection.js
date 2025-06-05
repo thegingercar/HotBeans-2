@@ -54,10 +54,10 @@ const HeroSection = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
           >
-            Shape Your Future in
+            Milton Keynes Web Development
             <br />
-            <span className="bg-gradient-to-r from-indigo-400 via-purple-400 to-indigo-600 bg-clip-text text-transparent">
-              Web Development
+            <span className="bg-gradient-to-r from-green-400 via-teal-400 to-green-600 bg-clip-text text-transparent">
+              Experts
             </span>
           </motion.h1>
 
@@ -67,8 +67,8 @@ const HeroSection = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.6 }}
           >
-            Join Hot Beans Web - where passionate developers grow, learn, and build 
-            incredible digital experiences together. Start your journey with us today.
+            Join Hot Beans Web in Milton Keynes - where passionate UK developers grow, learn, and build 
+            incredible digital experiences. Start your career in Buckinghamshire's thriving tech scene.
           </motion.p>
 
           <motion.div 
