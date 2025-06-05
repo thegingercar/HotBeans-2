@@ -12,6 +12,8 @@ import Footer from './Footer';
 import SecretJokesArea from './SecretJokesArea';
 import SecretCrazyWebsite from './SecretCrazyWebsite';
 import SecretButtons from './SecretButtons';
+import ChatWidget from './ChatWidget';
+import CVUploadWidget from './CVUploadWidget';
 
 const Home = () => {
   const [isLoaded, setIsLoaded] = useState(false);
