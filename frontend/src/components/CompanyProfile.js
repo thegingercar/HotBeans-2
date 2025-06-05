@@ -88,7 +88,7 @@ const CompanyProfile = () => {
                 alt="Hot Beans Web Office"
                 className="w-full h-96 object-cover"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-indigo-900/50 to-transparent"></div>
+              <div className="absolute inset-0 bg-gradient-to-t from-green-900/50 to-transparent"></div>
             </div>
             
             {/* Floating Stats */}
