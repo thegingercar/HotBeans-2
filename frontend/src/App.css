@@ -1,4 +1,4 @@
-/* Hot Beans Web - Custom Styles */
+/* Hot Beans Web - Custom Styles with Green Theme */
 
 .App {
   text-align: left;
@@ -19,7 +19,7 @@ section {
   scroll-behavior: smooth;
 }
 
-/* Custom scrollbar */
+/* Custom scrollbar with green theme */
 ::-webkit-scrollbar {
   width: 8px;
 }
@@ -29,12 +29,12 @@ section {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #3b82f6;
+  background: linear-gradient(135deg, #10b981, #14b8a6);
   border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #2563eb;
+  background: linear-gradient(135deg, #059669, #0d9488);
 }
 
 /* Ensure good contrast for form elements */
@@ -55,19 +55,19 @@ input[type="url"]:focus,
 select:focus,
 textarea:focus {
   outline: none;
-  border-color: #3b82f6 !important;
-  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+  border-color: #10b981 !important;
+  box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.1);
 }
 
-/* Custom button hover effects */
+/* Custom button hover effects with green theme */
 .btn-primary {
-  background: linear-gradient(135deg, #3b82f6, #06b6d4);
+  background: linear-gradient(135deg, #10b981, #14b8a6);
   transition: all 0.3s ease;
 }
 
 .btn-primary:hover {
   transform: translateY(-2px);
-  box-shadow: 0 10px 25px rgba(59, 130, 246, 0.3);
+  box-shadow: 0 10px 25px rgba(16, 185, 129, 0.3);
 }
 
 /* Glass morphism effect */
@@ -98,6 +98,15 @@ textarea:focus {
   }
 }
 
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
 .animate-fadeInUp {
   animation: fadeInUp 0.6s ease-out;
 }
@@ -106,9 +115,9 @@ textarea:focus {
   animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
 }
 
-/* Gradient text */
+/* Gradient text with green theme */
 .gradient-text {
-  background: linear-gradient(135deg, #3b82f6, #06b6d4);
+  background: linear-gradient(135deg, #10b981, #14b8a6);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -124,10 +133,27 @@ textarea:focus {
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
 }
 
+/* Professional green color scheme */
+.text-primary {
+  color: #10b981;
+}
+
+.text-secondary {
+  color: #6b7280;
+}
+
+.bg-primary {
+  background: linear-gradient(135deg, #10b981, #14b8a6);
+}
+
+.bg-secondary {
+  background: linear-gradient(135deg, #f3f4f6, #e5e7eb);
+}
+
 /* Custom loading spinner */
 .loading-spinner {
-  border: 2px solid rgba(59, 130, 246, 0.3);
-  border-top: 2px solid #3b82f6;
+  border: 2px solid rgba(16, 185, 129, 0.3);
+  border-top: 2px solid #10b981;
   border-radius: 50%;
   animation: spin 1s linear infinite;
 }
@@ -137,24 +163,24 @@ textarea:focus {
   100% { transform: rotate(360deg); }
 }
 
-/* Text selection */
+/* Text selection with green theme */
 ::selection {
-  background-color: #3b82f6;
+  background-color: #10b981;
   color: white;
 }
 
 ::-moz-selection {
-  background-color: #3b82f6;
+  background-color: #10b981;
   color: white;
 }
 
-/* Focus styles for accessibility */
+/* Focus styles for accessibility with green theme */
 button:focus-visible,
 a:focus-visible,
 input:focus-visible,
 select:focus-visible,
 textarea:focus-visible {
-  outline: 2px solid #3b82f6;
+  outline: 2px solid #10b981;
   outline-offset: 2px;
 }
 
@@ -165,6 +191,83 @@ input:focus:not(:focus-visible),
 select:focus:not(:focus-visible),
 textarea:focus:not(:focus-visible) {
   outline: none;
+}
+
+/* Chat widget animations */
+.chat-widget {
+  animation: float 3s ease-in-out infinite;
+}
+
+/* Upload zone styling with green theme */
+.upload-zone {
+  transition: all 0.3s ease;
+  border: 2px dashed #d1d5db;
+}
+
+.upload-zone:hover {
+  border-color: #10b981;
+  background-color: #f0fdf4;
+}
+
+.upload-zone.drag-active {
+  border-color: #10b981;
+  background-color: #ecfdf5;
+  transform: scale(1.02);
+}
+
+/* Modern button styles with green theme */
+.btn-modern {
+  background: linear-gradient(135deg, #10b981, #14b8a6);
+  border: none;
+  border-radius: 0.75rem;
+  color: white;
+  font-weight: 600;
+  padding: 0.875rem 2rem;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.btn-modern:hover {
+  background: linear-gradient(135deg, #059669, #0d9488);
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(16, 185, 129, 0.3);
+}
+
+.btn-modern:active {
+  transform: translateY(0);
+}
+
+/* Professional card styling */
+.professional-card {
+  background: white;
+  border-radius: 1rem;
+  padding: 2rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.professional-card:hover {
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+  transform: translateY(-4px);
+}
+
+/* Success/Error states with green theme */
+.success-state {
+  color: #059669;
+  background-color: #ecfdf5;
+  border-color: #10b981;
+}
+
+.error-state {
+  color: #dc2626;
+  background-color: #fef2f2;
+  border-color: #ef4444;
+}
+
+/* Background patterns */
+.bg-pattern {
+  background-image: radial-gradient(circle at 1px 1px, rgba(16, 185, 129, 0.15) 1px, transparent 0);
+  background-size: 20px 20px;
 }
 
 /* Responsive design helpers */
