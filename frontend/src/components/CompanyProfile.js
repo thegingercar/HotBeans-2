@@ -107,8 +107,8 @@ const CompanyProfile = () => {
               whileHover={{ scale: 1.05 }}
             >
               <div className="text-center">
-                <div className="text-3xl font-bold text-purple-400">3+</div>
-                <div className="text-sm text-gray-300">Years Growing</div>
+                <div className="text-3xl font-bold text-teal-400">5+</div>
+                <div className="text-sm text-gray-300">Years in Milton Keynes</div>
               </div>
             </motion.div>
           </motion.div>
