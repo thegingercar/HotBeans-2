@@ -82,7 +82,7 @@ const TeamProfiles = () => {
           {developers.map((dev, index) => (
             <motion.div
               key={index}
-              className="bg-gradient-to-b from-slate-800/50 to-slate-900/50 backdrop-blur-sm rounded-2xl border border-slate-700/50 overflow-hidden hover:border-blue-500/50 transition-all duration-300"
+              className="bg-gradient-to-b from-slate-800/50 to-slate-900/50 backdrop-blur-sm rounded-2xl border border-slate-700/50 overflow-hidden hover:border-green-500/50 transition-all duration-300"
               initial={{ opacity: 0, y: 30 }}
               animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
               transition={{ delay: index * 0.2 }}
@@ -98,7 +98,7 @@ const TeamProfiles = () => {
                 <div className="absolute inset-0 bg-gradient-to-t from-slate-900/80 to-transparent"></div>
                 
                 {/* Specialization Badge */}
-                <div className="absolute top-4 right-4 bg-blue-600/90 backdrop-blur-sm text-white px-3 py-1 rounded-full text-sm font-medium flex items-center gap-2">
+                <div className="absolute top-4 right-4 bg-green-600/90 backdrop-blur-sm text-white px-3 py-1 rounded-full text-sm font-medium flex items-center gap-2">
                   {dev.icon}
                   {dev.specialization}
                 </div>
@@ -107,12 +107,13 @@ const TeamProfiles = () => {
               {/* Profile Content */}
               <div className="p-6">
                 <h3 className="text-xl font-bold text-white mb-1">{dev.name}</h3>
-                <p className="text-blue-400 font-medium mb-2">{dev.role}</p>
+                <p className="text-green-400 font-medium mb-2">{dev.role}</p>
                 <p className="text-gray-300 text-sm mb-4 leading-relaxed">{dev.bio}</p>
                 
-                {/* Journey */}
+                {/* Location */}
                 <div className="bg-slate-700/30 rounded-lg p-3 mb-4">
-                  <p className="text-cyan-400 text-sm font-medium">{dev.journey}</p>
+                  <p className="text-green-400 text-sm font-medium">📍 {dev.location}</p>
+                  <p className="text-cyan-400 text-xs">{dev.journey}</p>
                 </div>
 
                 {/* Skills */}
@@ -122,7 +123,7 @@ const TeamProfiles = () => {
                     {dev.skills.map((skill, skillIndex) => (
                       <span 
                         key={skillIndex}
-                        className="bg-blue-600/20 text-blue-300 px-2 py-1 rounded text-xs font-medium"
+                        className="bg-green-600/20 text-green-300 px-2 py-1 rounded text-xs font-medium"
                       >
                         {skill}
                       </span>
@@ -142,7 +143,7 @@ const TeamProfiles = () => {
                   </motion.a>
                   <motion.a
                     href={dev.social.linkedin}
-                    className="text-gray-400 hover:text-blue-400 transition-colors"
+                    className="text-gray-400 hover:text-green-400 transition-colors"
                     whileHover={{ scale: 1.2 }}
                     whileTap={{ scale: 0.9 }}
                   >
