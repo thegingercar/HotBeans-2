@@ -126,7 +126,7 @@ const CompanyProfile = () => {
             {values.map((value, index) => (
               <motion.div
                 key={index}
-                className="bg-gradient-to-b from-slate-800/50 to-slate-900/50 backdrop-blur-sm p-6 rounded-xl border border-slate-700/50 text-center hover:border-indigo-500/50 transition-all duration-300"
+                className="bg-gradient-to-b from-slate-800/50 to-slate-900/50 backdrop-blur-sm p-6 rounded-xl border border-slate-700/50 text-center hover:border-green-500/50 transition-all duration-300"
                 whileHover={{ y: -5, scale: 1.02 }}
                 initial={{ opacity: 0, y: 20 }}
                 animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
