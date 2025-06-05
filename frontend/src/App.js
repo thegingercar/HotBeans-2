@@ -401,14 +401,44 @@ const Home = () => {
       >
         <div className="max-w-4xl mx-auto px-6 text-center text-white">
           <h2 className="text-4xl md:text-5xl font-bold mb-8">
-            Built for Professionals
+            Milton Keynes Professional Services
           </h2>
-          <p className="text-xl md:text-2xl text-gray-200 leading-relaxed">
+          <p className="text-xl md:text-2xl text-gray-200 leading-relaxed mb-12">
             Our platform combines cutting-edge technology with user-friendly design to deliver 
-            an exceptional experience for professional communication and document management. 
+            an exceptional experience for professional communication and document management in Milton Keynes and across the UK. 
             Whether you're uploading important documents or seeking immediate support through our chat system, 
             we've got you covered.
           </p>
+          
+          {/* Team Section */}
+          <div className="grid md:grid-cols-3 gap-8 mt-16">
+            <div className="bg-white bg-opacity-10 backdrop-blur-md rounded-xl p-6">
+              <div className="w-20 h-20 bg-gradient-to-r from-green-500 to-teal-600 rounded-full mx-auto mb-4 flex items-center justify-center">
+                <span className="text-white font-bold text-xl">AJ</span>
+              </div>
+              <h3 className="text-xl font-bold mb-2">Abdina Jama</h3>
+              <p className="text-gray-300">Senior Consultant</p>
+              <p className="text-sm text-gray-400 mt-2">Milton Keynes, UK</p>
+            </div>
+            
+            <div className="bg-white bg-opacity-10 backdrop-blur-md rounded-xl p-6">
+              <div className="w-20 h-20 bg-gradient-to-r from-green-500 to-teal-600 rounded-full mx-auto mb-4 flex items-center justify-center">
+                <span className="text-white font-bold text-xl">AH</span>
+              </div>
+              <h3 className="text-xl font-bold mb-2">Abunina Haider</h3>
+              <p className="text-gray-300">Project Manager</p>
+              <p className="text-sm text-gray-400 mt-2">Milton Keynes, UK</p>
+            </div>
+            
+            <div className="bg-white bg-opacity-10 backdrop-blur-md rounded-xl p-6">
+              <div className="w-20 h-20 bg-gradient-to-r from-green-500 to-teal-600 rounded-full mx-auto mb-4 flex items-center justify-center">
+                <span className="text-white font-bold text-xl">ZJ</span>
+              </div>
+              <h3 className="text-xl font-bold mb-2">Zulkera Joe</h3>
+              <p className="text-gray-300">Technical Lead</p>
+              <p className="text-sm text-gray-400 mt-2">Milton Keynes, UK</p>
+            </div>
+          </div>
         </div>
       </section>
 
