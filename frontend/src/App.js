@@ -273,6 +273,7 @@ const CVUpload = () => {
       {uploadedFiles.length > 0 && (
         <div className="mt-6">
           <h3 className="text-lg font-semibold text-gray-800 mb-3">Recent Uploads</h3>
+          <p className="text-sm text-gray-600 mb-3">📍 Serving Milton Keynes and across the UK</p>
           <div className="space-y-2">
             {uploadedFiles.map((file, index) => (
               <div key={index} className="flex items-center justify-between p-3 bg-gray-50 rounded-lg">
