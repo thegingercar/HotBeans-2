@@ -58,19 +58,19 @@ const CompanyProfile = () => {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="space-y-6"
           >
-            <div className="bg-gradient-to-r from-slate-800/50 to-indigo-900/30 backdrop-blur-sm p-8 rounded-2xl border border-slate-700/50">
-              <h3 className="text-2xl font-bold text-white mb-4">Our Story</h3>
+            <div className="bg-gradient-to-r from-slate-800/50 to-green-900/30 backdrop-blur-sm p-8 rounded-2xl border border-slate-700/50">
+              <h3 className="text-2xl font-bold text-white mb-4">Our Milton Keynes Story</h3>
               <p className="text-gray-300 leading-relaxed mb-4">
-                Hot Beans Web started as a small team of passionate developers with a big dream: 
-                to create web solutions that not only function flawlessly but also inspire and delight users.
+                Hot Beans Web started in Milton Keynes as a small team of passionate UK developers with a big dream: 
+                to create web solutions that not only function flawlessly but also support British businesses in their digital transformation.
               </p>
               <p className="text-gray-300 leading-relaxed mb-4">
-                Today, we're a growing company that combines technical excellence with creative innovation. 
-                We specialize in modern web applications, e-commerce solutions, and digital transformation projects.
+                Based in the heart of Buckinghamshire, we're a growing company that combines technical excellence with creative innovation. 
+                We specialize in modern web applications, e-commerce solutions, and digital transformation projects for UK enterprises.
               </p>
               <p className="text-gray-300 leading-relaxed">
-                We're looking for talented developers who share our passion for clean code, user experience, 
-                and continuous learning. Join us in shaping the future of web development.
+                We're looking for talented UK developers who share our passion for clean code, user experience, 
+                and continuous learning. Join our Milton Keynes team in shaping the future of British web development.
               </p>
             </div>
           </motion.div>
