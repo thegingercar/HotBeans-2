@@ -79,14 +79,14 @@ const HeroSection = () => {
           >
             <Link to="/apply">
               <motion.button
-                className="bg-gradient-to-r from-indigo-600 to-purple-500 text-white px-8 py-4 rounded-full text-lg font-semibold flex items-center gap-2 hover:shadow-2xl transition-all duration-300"
+                className="bg-gradient-to-r from-green-600 to-teal-500 text-white px-8 py-4 rounded-full text-lg font-semibold flex items-center gap-2 hover:shadow-2xl transition-all duration-300"
                 whileHover={{ 
                   scale: 1.05, 
-                  boxShadow: '0 20px 40px rgba(99, 102, 241, 0.4)' 
+                  boxShadow: '0 20px 40px rgba(16, 185, 129, 0.4)' 
                 }}
                 whileTap={{ scale: 0.95 }}
               >
-                Start Your Journey
+                Start Your UK Career
                 <ArrowRight size={20} />
               </motion.button>
             </Link>
