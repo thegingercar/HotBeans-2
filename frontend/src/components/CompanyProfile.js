@@ -132,7 +132,7 @@ const CompanyProfile = () => {
                 animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
                 transition={{ delay: 0.8 + index * 0.1 }}
               >
-                <div className="text-indigo-400 mb-4 flex justify-center">
+                <div className="text-green-400 mb-4 flex justify-center">
                   {value.icon}
                 </div>
                 <h4 className="text-lg font-semibold text-white mb-2">{value.title}</h4>
