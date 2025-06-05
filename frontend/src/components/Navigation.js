@@ -63,16 +63,11 @@ const Navigation = () => {
         <div className="flex justify-between items-center py-4">
           {/* Logo */}
           <motion.div 
-            className="flex items-center space-x-2 cursor-pointer"
+            className="flex items-center cursor-pointer"
             whileHover={{ scale: 1.05 }}
             onClick={() => handleNavClick('#home', 'Home')}
           >
-            <div className="bg-gradient-to-r from-indigo-500 to-purple-400 p-2 rounded-lg">
-              <Code className="w-6 h-6 text-white" />
-            </div>
-            <span className="text-2xl font-bold text-white">
-              Hot Beans <span className="text-indigo-400">Web</span>
-            </span>
+            <HotBeansLogo className="h-10" showText={true} />
           </motion.div>
 
           {/* Desktop Menu */}
