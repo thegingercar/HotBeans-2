@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { Link, useLocation } from 'react-router-dom';
-import { Menu, X, Code } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
+import HotBeansLogo from './HotBeansLogo';
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
