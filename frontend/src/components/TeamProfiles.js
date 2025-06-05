@@ -70,11 +70,11 @@ const TeamProfiles = () => {
           className="text-center mb-16"
         >
           <h2 className="text-4xl md:text-6xl font-bold text-white mb-6">
-            Meet Our <span className="text-blue-400">Developer Trainees</span>
+            Meet Our <span className="text-green-400">Professional Team</span>
           </h2>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
-            Get to know the talented individuals who are growing their careers with us. 
-            Their diverse backgrounds and fresh perspectives drive our innovation forward.
+            Based in Milton Keynes, UK - Get to know our talented professionals who deliver 
+            exceptional web solutions for businesses across Buckinghamshire and beyond.
           </p>
         </motion.div>
 
