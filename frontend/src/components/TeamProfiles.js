@@ -170,13 +170,13 @@ const TeamProfiles = () => {
           animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
           transition={{ delay: 0.8 }}
         >
-          <div className="bg-gradient-to-r from-blue-600/20 to-cyan-600/20 backdrop-blur-sm border border-blue-500/30 rounded-2xl p-8">
-            <h3 className="text-2xl font-bold text-white mb-4">Ready to Join Our Team?</h3>
+          <div className="bg-gradient-to-r from-green-600/20 to-teal-600/20 backdrop-blur-sm border border-green-500/30 rounded-2xl p-8">
+            <h3 className="text-2xl font-bold text-white mb-4">Ready to Join Our Milton Keynes Team?</h3>
             <p className="text-gray-300 mb-6 max-w-2xl mx-auto">
-              Start your journey with Hot Beans Web and become part of our growing family of passionate developers.
+              Start your journey with Hot Beans Web and become part of our growing family of passionate developers in Milton Keynes, Buckinghamshire.
             </p>
             <motion.button
-              className="bg-gradient-to-r from-blue-600 to-cyan-500 text-white px-8 py-3 rounded-full font-semibold hover:shadow-xl transition-all duration-300"
+              className="bg-gradient-to-r from-green-600 to-teal-500 text-white px-8 py-3 rounded-full font-semibold hover:shadow-xl transition-all duration-300"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
