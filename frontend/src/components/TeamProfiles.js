@@ -10,48 +10,51 @@ const TeamProfiles = () => {
 
   const developers = [
     {
-      name: "Sarah Chen",
-      role: "Frontend Developer Trainee",
-      specialization: "React & UI/UX",
+      name: "Abdina Jama",
+      role: "Senior Consultant",
+      specialization: "Project Leadership",
       image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2",
-      bio: "Passionate about creating beautiful, accessible user interfaces. Currently mastering React and exploring the latest in frontend frameworks.",
-      skills: ["React", "TypeScript", "Tailwind CSS", "Figma"],
+      bio: "Experienced consultant leading projects in Milton Keynes. Passionate about delivering exceptional client solutions and mentoring junior developers.",
+      skills: ["Project Management", "Client Relations", "Strategic Planning", "Team Leadership"],
       icon: <Code className="w-5 h-5" />,
-      journey: "6 months into my web development journey",
+      journey: "Leading development initiatives in Milton Keynes",
+      location: "Milton Keynes, UK",
       social: {
         github: "#",
         linkedin: "#",
-        email: "sarah@hotbeansweb.com"
+        email: "abdina@hotbeansweb.com"
       }
     },
     {
-      name: "Marcus Johnson",
-      role: "Full-Stack Developer Trainee",
-      specialization: "MERN Stack",
+      name: "Abunina Haider",
+      role: "Project Manager",
+      specialization: "Full-Stack Development",
       image: "https://images.pexels.com/photos/7652465/pexels-photo-7652465.jpeg",
-      bio: "Full-stack enthusiast with a background in computer science. Love building end-to-end solutions and learning new technologies.",
-      skills: ["Node.js", "MongoDB", "Express", "React"],
+      bio: "Project manager with strong technical background, ensuring seamless delivery of web solutions for clients across Buckinghamshire.",
+      skills: ["Node.js", "React", "MongoDB", "Agile Management"],
       icon: <Database className="w-5 h-5" />,
-      journey: "8 months of intensive training",
+      journey: "Managing cutting-edge projects in Milton Keynes",
+      location: "Milton Keynes, UK",
       social: {
         github: "#",
         linkedin: "#",
-        email: "marcus@hotbeansweb.com"
+        email: "abunina@hotbeansweb.com"
       }
     },
     {
-      name: "Emily Rodriguez",
-      role: "UI/UX Developer Trainee",
-      specialization: "Design & Frontend",
+      name: "Zulkera Joe",
+      role: "Technical Lead",
+      specialization: "Frontend Architecture",
       image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2",
-      bio: "Designer turned developer, bridging the gap between beautiful design and functional code. Passionate about user-centered development.",
-      skills: ["Vue.js", "SCSS", "Adobe Creative Suite", "Framer"],
+      bio: "Technical lead specializing in modern frontend technologies, driving innovation in user experience design for Milton Keynes businesses.",
+      skills: ["React", "TypeScript", "UI/UX Design", "Technical Architecture"],
       icon: <Palette className="w-5 h-5" />,
-      journey: "4 months transitioning from design",
+      journey: "Innovating frontend solutions in Milton Keynes",
+      location: "Milton Keynes, UK",
       social: {
         github: "#",
         linkedin: "#",
-        email: "emily@hotbeansweb.com"
+        email: "zulkera@hotbeansweb.com"
       }
     }
   ];
