@@ -42,11 +42,11 @@ const CompanyProfile = () => {
           className="text-center mb-16"
         >
           <h2 className="text-4xl md:text-6xl font-bold text-white mb-6">
-            About <span className="text-indigo-400">Hot Beans Web</span>
+            About <span className="text-green-400">Hot Beans Web</span>
           </h2>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
-            We're a dynamic web development company passionate about creating exceptional digital experiences. 
-            Founded with a vision to bridge the gap between innovative technology and creative design.
+            We're a dynamic web development company based in Milton Keynes, passionate about creating exceptional digital experiences 
+            for UK businesses. Founded with a vision to deliver cutting-edge technology solutions from the heart of Buckinghamshire.
           </p>
         </motion.div>
 
