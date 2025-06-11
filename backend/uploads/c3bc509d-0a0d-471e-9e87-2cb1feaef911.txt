@@ -1,0 +1,5 @@
+This is a test CV file for Hot Beans Web application testing.
+Created at: 2025-06-11T09:38:40.891739
+Name: Test User
+Email: test@example.com
+Skills: Python, JavaScript, React, FastAPI
