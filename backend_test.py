@@ -75,6 +75,27 @@ class HotBeansAPITester:
         if success:
             print(f"Retrieved {len(response)} chat messages")
         return success
+    
+    def test_create_chat_message(self):
+        """Test creating a chat message"""
+        data = {
+            "user_name": "Test User",
+            "message": "Hello from the API test",
+            "message_type": "user"
+        }
+        
+        success, response = self.run_test(
+            "Create Chat Message",
+            "POST",
+            "api/chat/message",
+            200,
+            data=data
+        )
+        
+        if success:
+            print(f"Created chat message with ID: {response.get('id', 'Unknown')}")
+        
+        return success
 
     def test_file_upload(self, file_path, file_name=None):
         """Test file upload functionality"""
@@ -117,6 +138,83 @@ class HotBeansAPITester:
         )
         if success:
             print(f"Retrieved {len(response)} uploaded files")
+        return success
+    
+    def test_submit_job_application(self):
+        """Test submitting a job application"""
+        data = {
+            "firstName": "Test",
+            "lastName": "User",
+            "email": "test@example.com",
+            "phone": "01234567890",
+            "address": "123 Test Street, Milton Keynes, UK",
+            "position": "Web Developer",
+            "experience": "3 years",
+            "availability": "Immediate",
+            "salary": "£40,000",
+            "skills": ["JavaScript", "React", "Python", "FastAPI"],
+            "portfolio": "https://example.com",
+            "github": "https://github.com/testuser",
+            "linkedin": "https://linkedin.com/in/testuser",
+            "motivation": "I want to join Hot Beans Web because of the great team and projects.",
+            "projects": "Built several web applications using React and FastAPI",
+            "references": "Available upon request"
+        }
+        
+        success, response = self.run_test(
+            "Submit Job Application",
+            "POST",
+            "api/job-applications",
+            200,
+            data=data
+        )
+        
+        if success:
+            print(f"Job application submitted with ID: {response.get('id', 'Unknown')}")
+        
+        return success
+    
+    def test_get_job_applications(self):
+        """Test fetching job applications"""
+        success, response = self.run_test(
+            "Get Job Applications",
+            "GET",
+            "api/job-applications",
+            200
+        )
+        if success:
+            print(f"Retrieved {len(response)} job applications")
+        return success
+    
+    def test_status_check(self):
+        """Test status check endpoint"""
+        data = {
+            "client_name": "API Tester"
+        }
+        
+        success, response = self.run_test(
+            "Status Check",
+            "POST",
+            "api/status",
+            200,
+            data=data
+        )
+        
+        if success:
+            print(f"Status check created with ID: {response.get('id', 'Unknown')}")
+        
+        return success
+    
+    def test_get_status_checks(self):
+        """Test fetching status checks"""
+        success, response = self.run_test(
+            "Get Status Checks",
+            "GET",
+            "api/status",
+            200
+        )
+        if success:
+            print(f"Retrieved {len(response)} status checks")
         return success
 
     def print_summary(self):
@@ -172,15 +270,22 @@ def main():
     # Test root endpoint
     tester.test_root_endpoint()
     
-    # Test chat messages endpoint
+    # Test status endpoints
+    tester.test_status_check()
+    tester.test_get_status_checks()
+    
+    # Test chat endpoints
     tester.test_chat_messages()
+    tester.test_create_chat_message()
     
     # Test file upload
     test_file_path = create_test_file()
     tester.test_file_upload(test_file_path)
-    
-    # Test getting uploads
     tester.test_get_uploads()
+    
+    # Test job application endpoints
+    tester.test_submit_job_application()
+    tester.test_get_job_applications()
     
     # Print summary
     success = tester.print_summary()
